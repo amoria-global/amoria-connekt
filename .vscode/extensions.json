@@ -1,0 +1,9 @@
+{
+  "recommendations": [
+    "naumovs.color-highlight",
+    "anseki.vscode-color",
+    "bradlc.vscode-tailwindcss",
+    "dbaeumer.vscode-eslint",
+    "esbenp.prettier-vscode"
+  ]
+}

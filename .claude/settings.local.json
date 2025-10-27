@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm run build:*)",
+      "Bash(npx tsc:*)",
+      "Bash(yarn build:*)",
+      "Bash(yarn next build --turbopack)",
+      "Bash(if not exist .vscode mkdir .vscode)",
+      "Bash(cmd /c \"if not exist .vscode mkdir .vscode\")",
+      "Bash(npm install:*)",
+      "Bash(npm uninstall:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

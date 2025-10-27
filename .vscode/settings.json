@@ -1,0 +1,85 @@
+{
+  // ========================================
+  // COLOR PICKERS - Multiple Approaches
+  // ========================================
+
+  // Built-in VS Code color decorators (may disappear due to TS server)
+  "editor.colorDecorators": true,
+  "editor.colorDecoratorsLimit": 1000,
+
+  // Color Highlight extension (install: naumovs.color-highlight)
+  "color-highlight.enable": true,
+  "color-highlight.markerType": "dot-before",
+  "color-highlight.matchWords": true,
+  "color-highlight.matchRgba": true,
+  "color-highlight.matchHsl": true,
+  "color-highlight.languages": [
+    "typescript",
+    "typescriptreact",
+    "javascript",
+    "javascriptreact",
+    "css",
+    "scss"
+  ],
+
+  // Prevent TypeScript from clearing color decorators
+  "typescript.tsserver.experimental.enableProjectDiagnostics": false,
+  "typescript.preferences.disableSuggestions": false,
+
+  // Disable semantic highlighting that conflicts with color decorators
+  "editor.semanticHighlighting.enabled": false,
+
+  // Keep suggestions working
+  "editor.quickSuggestions": {
+    "other": true,
+    "comments": false,
+    "strings": true
+  },
+  "editor.suggest.insertMode": "replace",
+  "editor.inlineSuggest.enabled": true,
+
+  // CSS validation
+  "css.validate": true,
+  "scss.validate": true,
+
+  // Tailwind CSS configuration
+  "tailwindCSS.includeLanguages": {
+    "typescript": "javascript",
+    "typescriptreact": "javascript"
+  },
+  "tailwindCSS.experimental.classRegex": [
+    ["className\\s*=\\s*['\"`]([^'\"`]*)['\"`]", "([^\\s]+)"],
+    ["class\\s*=\\s*['\"`]([^'\"`]*)['\"`]", "([^\\s]+)"],
+    ["style\\s*=\\s*\\{\\{[^}]*backgroundColor:\\s*['\"`]([^'\"`]*)['\"`]", "$1"]
+  ],
+
+  // Language-specific settings
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.quickSuggestions": {
+      "strings": true
+    },
+    "editor.semanticHighlighting.enabled": false,
+    "editor.colorDecorators": true
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.quickSuggestions": {
+      "strings": true
+    },
+    "editor.semanticHighlighting.enabled": false,
+    "editor.colorDecorators": true
+  },
+  "[javascript]": {
+    "editor.quickSuggestions": {
+      "strings": true
+    },
+    "editor.colorDecorators": true
+  },
+  "[javascriptreact]": {
+    "editor.quickSuggestions": {
+      "strings": true
+    },
+    "editor.colorDecorators": true
+  }
+}
